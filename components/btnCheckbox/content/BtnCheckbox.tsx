@@ -41,7 +41,6 @@ const BtnCheckbox: React.FC<BtnCheckboxPropsType> = ({
   return (
     <BtnCheckboxContainer>
       {options.map((option: BtnCheckboxOptionType, index: number) => {
-        console.log(option);
         const inititalValue: boolean =
           type === 'checkbox'
             ? //@ts-ignore

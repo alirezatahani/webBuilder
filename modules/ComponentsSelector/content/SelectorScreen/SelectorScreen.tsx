@@ -1,9 +1,6 @@
 import React, { useState, memo } from 'react';
 import { Row } from '@components/grid';
-import {
-  BoxNames,
-  BoxName,
-} from '@modules/ComponentsSelector/utils/constants';
+import { BoxNames, BoxName } from '@modules/ComponentsSelector/utils/constants';
 import {
   DragCol,
   DropCol,
@@ -26,14 +23,36 @@ export const SelectorScreen = memo(function Container() {
 
   const choosedComponent = (item: any) => {
     setSelectedStyle(item.style);
-  }
+  };
 
-  const modalBtn = <Button onClick={() => {setVisible(false)}} style={{padding:'20px 30px', backgroundColor:'#282A35', border:'none'}}>ok</Button>
-  
+  const modalBtn = (
+    <Button
+      onClick={() => {
+        setVisible(false);
+      }}
+      style={{
+        padding: '20px 30px',
+        backgroundColor: '#282A35',
+        border: 'none',
+      }}
+    >
+      ok
+    </Button>
+  );
+
   return (
     <Row>
-      <Modal visible={visible} onClose={() => setVisible(false)} actions={modalBtn}>
-        {selectedComponent && <SelectorModal selectedComponent={selectedComponent} choosedComponent={choosedComponent} />}
+      <Modal
+        visible={visible}
+        onClose={() => setVisible(false)}
+        actions={modalBtn}
+      >
+        {selectedComponent && (
+          <SelectorModal
+            selectedComponent={selectedComponent}
+            choosedComponent={choosedComponent}
+          />
+        )}
       </Modal>
       <DropCol span={9} style={{ overflow: 'hidden', clear: 'both' }}>
         <div style={{ overflow: 'hidden', clear: 'both' }}>

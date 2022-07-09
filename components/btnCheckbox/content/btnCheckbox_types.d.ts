@@ -6,10 +6,7 @@ export type BtnCheckboxPropsType = {
   name?: string;
   options: BtnCheckboxOptionType[] | any;
   type?: string;
-  onChange?: (
-    event: React.ChangeEvent<HTMLInputElement>,
-    values: string | string[] | number | number[]
-  ) => void;
+  onChange: any;
   value?: BtnCheckboxOptionType;
   defaultValue?: string | string[] | number[];
   checked?: boolean;

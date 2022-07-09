@@ -43,10 +43,7 @@ const TypographyControlPanel: React.FC<TypographyControlPanelProps> = ({
     },
   };
 
-  const handleChangeSelect = (event: {
-    kind: string;
-    value: string | number;
-  }) => {
+  const handleChangeSelect = (event: any) => {
     onChange(event.kind, event.value);
   };
 

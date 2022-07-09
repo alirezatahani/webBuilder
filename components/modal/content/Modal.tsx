@@ -11,6 +11,7 @@ import {
   ModalTitle,
   ModalWrapper,
 } from '../styles/modal.styles';
+
 /**
  * @children should be a React element
  * @visible should be set true/false when you enable/disable modal
@@ -21,7 +22,7 @@ import {
  */
 
 const Modal: React.FC<ModalProps> = ({ visible, ...props }: ModalProps) => {
-  return ReactDOM.createPortal(
+  return (
     <>
       <ModalWrapper
         visible={visible}
@@ -39,8 +40,7 @@ const Modal: React.FC<ModalProps> = ({ visible, ...props }: ModalProps) => {
           </ModalClose>
         </ModalContainer>
       </ModalSection>
-    </>,
-    document.getElementById('modal')
+    </>
   );
 };
 Modal.defaultProps = {

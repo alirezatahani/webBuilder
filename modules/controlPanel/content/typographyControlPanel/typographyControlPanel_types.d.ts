@@ -7,6 +7,6 @@ export type FontTypeOptionDataType = {
   value?: string;
 };
 export type TypographyControlPanelProps = {
-  initialValue?: InitialValueType;
-  onChange?: (name: string, value: string | number | string[]) => any;
+  initialValue?: any;
+  onChange?: any;
 };

@@ -1,12 +1,14 @@
-import React from "react";
-import { ChooseTemplates } from "@modules/chooseTemplates";
+import React from 'react';
+import { ChooseTemplates } from '@modules/chooseTemplates';
+import { Portal } from '@components/index';
 
 const Home = () => {
-	return (
-		<>
-			{/* <ChooseTemplates /> */}
-			<div>Home</div>
-		</>
-	);
+  return (
+    <>
+      <Portal>
+        <ChooseTemplates />
+      </Portal>
+    </>
+  );
 };
 export default Home;

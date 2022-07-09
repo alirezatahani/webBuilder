@@ -10,4 +10,5 @@ export type ModalProps = {
 };
 export type ModalWrapperProps = {
   visible: boolean;
+  onClick?: any;
 };

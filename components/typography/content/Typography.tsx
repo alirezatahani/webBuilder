@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { MutableRefObject } from 'react';
 import { TypographyContainer } from '../styles/typography.styles';
 import { TypographyProps, VariantsType } from './typography_types';
 
@@ -13,12 +13,8 @@ const variantsMapping: VariantsType = {
   subtitle2: 'h6',
 };
 
-const Typography: React.FC<TypographyProps> = ({
-  variant,
-  children,
-  ...props
-}: TypographyProps) => {
-  const copyRef = React.useRef<null | HTMLParagraphElement>();
+const Typography = ({ variant, children, ...props }: TypographyProps) => {
+  const copyRef: any = React.useRef<undefined | null | HTMLParagraphElement>();
 
   const Component: any = variant ? variantsMapping[variant] : 'p';
 

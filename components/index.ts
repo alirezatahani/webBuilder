@@ -31,3 +31,4 @@ export * from './templateCart';
 export * from './textarea';
 export * from './modal';
 export * from './slider';
+export * from './portal';
