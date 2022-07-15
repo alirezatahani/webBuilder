@@ -31,6 +31,7 @@ const BlankDesign = () => {
           y: rect.top,
         };
       };
+
       const { x, y } = getPosition(element);
       const elementX = Math.round((12 * x) / width);
       //get width of element
