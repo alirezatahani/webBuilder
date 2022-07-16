@@ -1,5 +1,5 @@
-import React from 'react';
-import { Jumbotron, HeroButton, Section } from '../styles/blank1.styles';
+import React from "react";
+import { Jumbotron, HeroButton, Section } from "../styles/blank1.styles";
 import {
   Navbar,
   Footer,
@@ -8,7 +8,7 @@ import {
   Col,
   Typography,
   Container,
-} from '@components/index';
+} from "@components/index";
 
 export const Blank1 = () => {
   return (
@@ -24,9 +24,9 @@ export const Blank1 = () => {
               md={6}
               lg={6}
               xl={6}
-              style={{ padding: '20px 90px 20px ' }}
+              style={{ padding: "20px 90px 20px " }}
             >
-              <Typography variant="h2" style={{ marginBottom: '1rem' }}>
+              <Typography variant="h2" style={{ marginBottom: "1rem" }}>
                 Introduce your idea
               </Typography>
 
@@ -58,9 +58,9 @@ export const Blank1 = () => {
               <Typography
                 variant="h2"
                 style={{
-                  textAlign: 'center',
-                  marginBottom: '2rem',
-                  marginTop: '6rem',
+                  textAlign: "center",
+                  marginBottom: "2rem",
+                  marginTop: "6rem",
                 }}
               >
                 Add your title
@@ -68,9 +68,9 @@ export const Blank1 = () => {
             </Col>
           </Row>
 
-          <Row style={{ padding: '0px 300px' }}>
+          <Row style={{ padding: "0px 300px" }}>
             <Col xs={12}>
-              <Typography variant="body1" style={{ textAlign: 'center' }}>
+              <Typography variant="body1" style={{ textAlign: "center" }}>
                 Use this space to elaborate on the ideas introduced in the
                 title. Connect with your visitors. Include the information that
                 makes the most sense for your brand. Try sharing your mission to
@@ -100,7 +100,7 @@ export const Blank1 = () => {
               md={6}
               lg={6}
               xl={6}
-              style={{ padding: '20px 80px 20px ' }}
+              style={{ padding: "20px 80px 20px " }}
             >
               <Typography variant="h4">Introduce your idea</Typography>
 
@@ -131,7 +131,7 @@ export const Blank1 = () => {
               md={6}
               lg={6}
               xl={6}
-              style={{ padding: '20px 80px 20px ' }}
+              style={{ padding: "20px 80px 20px " }}
             >
               <Typography variant="h4">Introduce your idea</Typography>
 
@@ -161,7 +161,7 @@ export const Blank1 = () => {
               md={6}
               lg={6}
               xl={6}
-              style={{ padding: '20px 100px 20px ' }}
+              style={{ padding: "20px 100px 20px " }}
             >
               <Typography variant="h3">Summarize your list here</Typography>
             </Col>
@@ -172,20 +172,20 @@ export const Blank1 = () => {
               md={6}
               lg={6}
               xl={6}
-              style={{ padding: '20px 20px 20px ' }}
+              style={{ padding: "20px 20px 20px " }}
             >
               <Typography variant="body1">
                 <li>Use bullet points to highlight important information</li>
-              </Typography>{' '}
+              </Typography>{" "}
               <Typography variant="body1">
                 <li>Use bullet points to highlight important information</li>
-              </Typography>{' '}
+              </Typography>{" "}
               <Typography variant="body1">
                 <li>Use bullet points to highlight important information</li>
-              </Typography>{' '}
+              </Typography>{" "}
               <Typography variant="body1">
                 <li>Use bullet points to highlight important information</li>
-              </Typography>{' '}
+              </Typography>{" "}
               <Typography variant="body1">
                 <li>Use bullet points to highlight important information</li>
               </Typography>
