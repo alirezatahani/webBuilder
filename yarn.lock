@@ -387,6 +387,13 @@
   dependencies:
     "@types/react" "*"
 
+"@types/react-grid-layout@^1.3.2":
+  "integrity" "sha512-ZzpBEOC1JTQ7MGe1h1cPKSLP4jSWuxc+yvT4TsAlEW9+EFPzAf8nxQfFd7ea9gL17Em7PbwJZAsiwfQQBUklZQ=="
+  "resolved" "https://registry.npmjs.org/@types/react-grid-layout/-/react-grid-layout-1.3.2.tgz"
+  "version" "1.3.2"
+  dependencies:
+    "@types/react" "*"
+
 "@types/react-select@^5.0.1":
   "integrity" "sha512-h5Im0AP0dr4AVeHtrcvQrLV+gmPa7SA0AGdxl2jOhtwiE6KgXBFSogWw8az32/nusE6AQHlCOHQWjP1S/+oMWA=="
   "resolved" "https://registry.npmjs.org/@types/react-select/-/react-select-5.0.1.tgz"

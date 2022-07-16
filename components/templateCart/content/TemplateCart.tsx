@@ -1,14 +1,14 @@
-import { Typography } from '@components/typography';
-import React from 'react';
-import Link from 'next/link';
+import { Typography } from "@components/typography";
+import React from "react";
+import Link from "next/link";
 import {
   Cart,
   CartContainer,
   CartImage,
   CartLinks,
   CartLinkSpan,
-} from '../styles/templateCart.styles';
-import { TemplateCartProps } from './templateCart_types';
+} from "../styles/templateCart.styles";
+import { TemplateCartProps } from "./templateCart_types";
 
 const TemplateCart: React.FC<TemplateCartProps> = ({ template, src }) => {
   return (
@@ -19,11 +19,14 @@ const TemplateCart: React.FC<TemplateCartProps> = ({ template, src }) => {
             <Link href={template.path}>
               <CartLinkSpan>Full site preview</CartLinkSpan>
             </Link>
+            <Link href="gridLayout">
+              <CartLinkSpan>Choose Template</CartLinkSpan>
+            </Link>
           </CartLinks>
         </CartImage>
       </Cart>
       <Typography variant="body1">
-        {template.path.replace('/', ' #')}
+        {template.path.replace("/", " #")}
       </Typography>
     </CartContainer>
   );
