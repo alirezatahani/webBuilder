@@ -29,6 +29,7 @@ export const CartLinks = styled.div({
   backgroundColor: '#202730',
   color: '#00aeff',
   display: 'flex',
+  rowGap:".5rem",
   flexDirection: 'column',
   alignItems: 'center',
   justifyContent: 'center',
@@ -51,4 +52,22 @@ export const Cart = styled.div({
 export const CartLinkSpan = styled.span({
   textAlign: 'center',
   color: '#fff',
+  transition:"all 200ms ease-in",
+  ":hover":{
+    color:"#00aeff",
+    borderBottom:"1px solid",
+    cursor:"pointer"
+  }
 });
+export const CartLinkSpanButton = styled.button(({theme})=>({
+  backgroundColor:"#00aeff",
+  boxShadow:"rgb(0 0 0 / 80%) 2px 2px 4px 1px, rgb(255 255 255 / 15%) -2px ",
+  fontSize:"15px",
+  color:"#fff",
+  padding:".5rem 2.5rem",
+  textTransform:"uppercase",
+  borderRadius:"10px",
+  ":hover":{
+    cursor:"pointer"
+  }
+}))
