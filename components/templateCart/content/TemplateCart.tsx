@@ -7,6 +7,7 @@ import {
   CartImage,
   CartLinks,
   CartLinkSpan,
+  CartLinkSpanButton,
 } from "../styles/templateCart.styles";
 import { TemplateCartProps } from "./templateCart_types";
 
@@ -16,6 +17,14 @@ const TemplateCart: React.FC<TemplateCartProps> = ({ template, src }) => {
       <Cart>
         <CartImage src={src}>
           <CartLinks>
+            <Link
+              href={{
+                pathname: "gridLayout",
+                query: {template:template.path},
+              }}
+            >
+              <CartLinkSpanButton>Use Template</CartLinkSpanButton>
+            </Link>
             <Link href={template.path}>
               <CartLinkSpan>Full site preview</CartLinkSpan>
             </Link>

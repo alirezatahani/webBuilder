@@ -1,23 +1,23 @@
-import React from 'react';
-import { Button, Container } from '@components/index';
-import { Col } from '@components/index';
-import { Tabs, TabPane } from '@components/index';
-import { TemplateCart } from '@components/index';
+import React from "react";
+import { Button, Container } from "@components/index";
+import { Col } from "@components/index";
+import { Tabs, TabPane } from "@components/index";
+import { TemplateCart } from "@components/index";
 import {
   PageTitle,
   TemlatesContainer,
   TemplatesSection,
-} from '../styles/chooseTemplates';
-import { AllTemplatesImage } from '../utils/images';
-import { routes } from '../utils/routes';
-import Link from 'next/link';
+} from "../styles/chooseTemplates";
+import { AllTemplatesImage } from "../utils/images";
+import { routes } from "../utils/routes";
+import Link from "next/link";
 
 export const ChooseTemplates: React.FC = () => {
   const filteredProdesign = routes.filter((template) => {
-    return template.path.includes('predesign');
+    return template.path.includes("predesign");
   });
   const filteredBlank = routes.filter((template) => {
-    return template.path.includes('blank');
+    return template.path.includes("blank");
   });
   return (
     <>
@@ -49,7 +49,7 @@ export const ChooseTemplates: React.FC = () => {
               </TabPane>
               <TabPane tab="Balnk templates">
                 <TemlatesContainer>
-                  {filteredBlank.map((route) => {
+                  {filteredBlank.map((route: any) => {
                     const src =
                       AllTemplatesImage[
                         route.path as keyof typeof AllTemplatesImage
