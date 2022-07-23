@@ -20,16 +20,13 @@ const TemplateCart: React.FC<TemplateCartProps> = ({ template, src }) => {
             <Link
               href={{
                 pathname: "gridLayout",
-                query: {template:template.path},
+                query: { template: template.path },
               }}
             >
               <CartLinkSpanButton>Use Template</CartLinkSpanButton>
             </Link>
             <Link href={template.path}>
               <CartLinkSpan>Full site preview</CartLinkSpan>
-            </Link>
-            <Link href="gridLayout">
-              <CartLinkSpan>Choose Template</CartLinkSpan>
             </Link>
           </CartLinks>
         </CartImage>

@@ -23,20 +23,6 @@ export const CartLinks = styled.div({
   width: "100%",
   height: 0,
   opacity: 0,
-<<<<<<< HEAD
-  borderRadius: "0 0 15px 15px",
-  position: "absolute",
-  bottom: "-2px",
-  backgroundColor: "#202730",
-  color: "#00aeff",
-  display: "flex",
-  flexDirection: "column",
-  alignItems: "center",
-  justifyContent: "center",
-  transition: "all .2s ease-in-out",
-  cursor: "pointer",
-  rowGap: "1rem",
-=======
   borderRadius: '0 0 15px 15px',
   position: 'absolute',
   bottom: '-2px',
@@ -48,7 +34,6 @@ export const CartLinks = styled.div({
   alignItems: 'center',
   justifyContent: 'center',
   transition: 'all .2s ease-in-out',
->>>>>>> 413c8847d14133fc408c69cafa23b7aa2648427d
 });
 export const Cart = styled.div({
   width: "250px",
@@ -65,12 +50,6 @@ export const Cart = styled.div({
   },
 });
 export const CartLinkSpan = styled.span({
-<<<<<<< HEAD
-  textAlign: "center",
-  color: "#fff",
-  ":hover":{
-    color:'blueviolet'
-=======
   textAlign: 'center',
   color: '#fff',
   transition:"all 200ms ease-in",
@@ -78,7 +57,6 @@ export const CartLinkSpan = styled.span({
     color:"#00aeff",
     borderBottom:"1px solid",
     cursor:"pointer"
->>>>>>> 413c8847d14133fc408c69cafa23b7aa2648427d
   }
 });
 export const CartLinkSpanButton = styled.button(({theme})=>({

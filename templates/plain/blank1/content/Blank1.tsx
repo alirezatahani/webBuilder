@@ -51,7 +51,7 @@ export const Blank1 = () => {
         </Container>
       </Section>
 
-      <section>
+      <Section>
         <Jumbotron fluid>
           <Row>
             <Col xs={12}>
@@ -89,7 +89,7 @@ export const Blank1 = () => {
             </Col>
           </Row>
         </Jumbotron>
-      </section>
+      </Section>
 
       <Section>
         <Container>
